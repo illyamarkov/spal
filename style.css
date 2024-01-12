@@ -7,6 +7,10 @@
     font-family: barcode;
     src: url(LibreBarcode128-Regular.ttf);
   }
+
+html, body {
+    touch-action: none;
+}
   
 
 h1 {
