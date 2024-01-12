@@ -1,0 +1,55 @@
+@font-face {
+    font-family: k2d;
+    src: url(K2D-ExtraLight.ttf);
+  }
+
+  @font-face {
+    font-family: barcode;
+    src: url(LibreBarcode128-Regular.ttf);
+  }
+  
+
+h1 {
+    text-align: center;
+    font-size: 100px;
+    font-family: k2d;
+}
+
+h2 {
+    margin-top: -50px;
+    text-align: center;
+    font-size: 50px;
+    font-family: barcode;
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+  }
+
+  .container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(45deg, #3498db, #e74c3c);
+  }
+
+  .circle {
+    position: absolute;
+    width: 1000vw;
+    height: 1000vh;
+    background: url('bg.png') repeat;
+    animation: moveInCircle 5s linear infinite;
+    margin-left: 1000px;
+  }
+
+  @keyframes moveInCircle {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg);
+      background-position: 0vw;
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(360deg);
+      background-position: 500vw;
+    }
+  }
